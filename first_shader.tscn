@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhs0uf563bdgn"]
+
+[ext_resource type="Shader" uid="uid://c02oyp2h0dcpu" path="res://shaders/circle.gdshader" id="1_mb81j"]
+[ext_resource type="Script" uid="uid://tnmdaynujvux" path="res://canvas_layer.gd" id="2_0wixr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j8e2o"]
+shader = ExtResource("1_mb81j")
+shader_parameter/progress = 0.5
+shader_parameter/circle_position = Vector2(0.5, 0.5)
+shader_parameter/background_color = Color(0, 0, 0, 1)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_j8e2o")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_0wixr")
