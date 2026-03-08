@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b6gdqxo33u0tu"]
 
-[ext_resource type="PackedScene" uid="uid://bhnhwaxq8us37" path="res://second_shader.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://bhnhwaxq8us37" path="res://scenes/second_shader.tscn" id="1_fj7yv"]
 
 [node name="World" type="Node2D"]
 
